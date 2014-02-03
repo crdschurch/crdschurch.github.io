@@ -1,3 +1,58 @@
-name: Your New Jekyll Site
+name: Crossroads Lab
 markdown: redcarpet
 pygments: true
+prose:
+  rooturl: '_posts'
+  siteurl: 'http://lab.crossroads.net'
+  relativeLinks: 'http://lab.crossroads.net/links.jsonp'
+  media: 'media'
+  metadata:
+    _posts:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "post"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "categories"
+        field:
+          element: "multiselect"
+          label: "Add Category"
+          placeholder: "Choose Categories"
+          options:
+            - name: "Milacron"
+              value: "milacron"
+            - name: "Other"
+              value: "other"
+      - name: "tags"
+        field:
+          element: "multiselect"
+          label: "Add Tags"
+          placeholder: "Choose Tags"
+          options:
+            - name: "Framework"
+              value: "framework"
+            - name: "Preprocessors"
+              value: "preprocessors"
+            - name: "CSS"
+              value: "css"
+            - name: "JavaScript"
+              value: "javascript"
+    _posts/static:
+      - name: "layout"
+        field:
+          element: "hidden"
+          value: "default"
+      - name: "title"
+        field:
+          element: "text"
+          label: "Title"
+          value: ""
+      - name: "permalink"
+        field:
+          element: "text"
+          label: "Permalink"
+          value: ""
