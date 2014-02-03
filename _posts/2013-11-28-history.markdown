@@ -1,8 +1,7 @@
 ---
 layout: post
 title: Crossroads Web History
-date: 
-  "Thu Nov 28 2013 21:49:29 GMT-0500 (EST)": initial
+date: 2013-21-29 17:43:32 -0500
 categories: null
 published: true
 ---
