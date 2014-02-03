@@ -1,5 +1,4 @@
 #crdschurch.github.io#
-========
 
 ##Quick Start##
 * git clone https://github.com/crdschurch/crdschurch.github.io
