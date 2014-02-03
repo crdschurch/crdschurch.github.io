@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "Crossroads Web History"
-date:   2013-11-28 22:50:01
-categories: 
+title: Crossroads Web History
+date: {}
+categories: null
+published: true
 ---
 
 * 01/24/2001 - crossroadscommunity.net earliest known date ([archive](https://web.archive.org/web/20010124031900/http://www.crossroadscommunity.net/))
@@ -14,22 +15,22 @@ categories:
 * 05/28/2004 - Crazy Campaign goes online ([archive](https://web.archive.org/web/20040528130006/http://www.crossroadscommunity.net/crazy/index.asp))
 * 08/26/2004 - Community Groups go online ([archive](https://web.archive.org/web/20040826082327/http://www.crossroadscommunity.net/CommunityGroups.asp))
 * 12/07/2004 - Online camera of building remodel ([archive](https://web.archive.org/web/20041207164004/http://www.crossroadscommunity.net/construct-o-cam.asp))
-* 02/06/2005 - First all church jounry, uses Find A-Team tool ([archive](https://web.archive.org/web/20050206154131/http://www.crossroadscommunity.net/findateam.asp))
+* 02/06/2005 - First all church journey (The Life), uses Find A-Team tool ([archive](https://web.archive.org/web/20050206154131/http://www.crossroadscommunity.net/findateam.asp))
 * 10/23/2005 - Servenet login added ([archive](https://web.archive.org/web/20051023180030/http://24.106.249.130/servenet/login.aspx))
 * 10/30/2005 - Still on ASP, but now support index.asp as the default page
 * 11/23/2005 - First Go site goes online ([archive](https://web.archive.org/web/20060328045303/http://www.crossroadscommunity.net/go/))
 * 12/06/2005 - Response to Katrina is put online ([archive](https://web.archive.org/web/20051206014939/http://www.crossroadscommunity.net/katrina.asp))
 * 01/10/2006 - Taking prayer request via Mailsend ([archive](https://web.archive.org/web/20060110024622/http://www.crossroadscommunity.net/))
-* 01/27/2006 - ID All Church Journy goes online ([archive]())
+* 01/27/2006 - ID All Church Journey goes online ([archive]())
 * 02/12/2006 - Servenet moves from an IP to domain name ([archive](https://web.archive.org/web/20060212235655/http://www.crossroadscommunity.net/servenet/login.aspx))
 * 04/14/2006 - GoCincinnati goes online ([archive](https://web.archive.org/web/20060512042552/http://www.crossroadscommunity.net/GOCincinnati/))
 * 04/20/2006 - Open House online signup form ([archive](https://web.archive.org/web/20060420153445/http://www.crossroadscommunity.net/OpenHouseSignup.asp))
 * 04/26/2006 - Space goes online ([archive](https://web.archive.org/web/20060421131724/http://www.crossroadscommunity.net/space.asp))
 * 05/26/2006 - Online Giving, eGift and One time ([archive](https://web.archive.org/web/20060524125152/http://crossroadscommunity.net/giving/))
-* 08/06/2006 - Habbit comes online
+* 08/06/2006 - Habitat comes online
 * 01/26/2007 - Kingdom Come Experiment ([archive](https://web.archive.org/web/20070126125831/http://www.kingdomexperiment.com/))
 * 01/26/2007 - New Small Group search tool ([archive](https://web.archive.org/web/20070126130101/http://www.kingdomexperiment.com/groups/small_group_search/))
 * 02/03/2007 - 3500 Open Begins ([archive](https://web.archive.org/web/20070203164200/http://crossroadscommunity.net/Meetings.asp))
-* 03/02/2007 - Ciny Experiment ([archive](https://web.archive.org/web/20070302112058/http://www.cincyexperiment.com/))
+* 03/02/2007 - Cincy Experiment ([archive](https://web.archive.org/web/20070302112058/http://www.cincyexperiment.com/))
 * 10/12/2007 - Moved to crossroads.net ([archive](https://web.archive.org/web/20071012221324/http://www.crossroads.net/))
 * 12/13/2007 - New site, new design. Moved from asp to php ([archive](https://web.archive.org/web/20071213011224/http://www.crossroads.net/))
