@@ -1,0 +1,23 @@
+@import 'variable-overrides';
+@import '../bower_components/bootstrap-sass/lib/bootstrap';
+@import 'overrides';
+@import 'brandbar';
+
+
+.logo {
+	font-size: 25px;
+	font-weight: 100;
+	margin-top: -2px;
+}
+
+.logo img {
+	max-width: 140px;
+	margin-top: -6px;
+}
+
+.center {
+    float:none;
+    display:inline-block;
+    vertical-align:middle;
+    margin-right:-4px;
+}

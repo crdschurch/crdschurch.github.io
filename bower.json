@@ -1,0 +1,20 @@
+{
+  "name": "crdschurch.github.io",
+  "version": "0.0.1",
+  "authors": [
+    "Dan Rye <drye@crossroads.net>"
+  ],
+  "description": "Crossroads Lab: where we talk about and share the web technologies and solutions we're implementing",
+  "license": "MIT",
+  "homepage": "crdschurch.github.io",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.1.0"
+  }
+}
