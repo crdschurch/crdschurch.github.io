@@ -2,4 +2,4 @@ crdschurch.github.io
 ========
 
 Quick Start
-bower install crdschurch.github.io
+bower install crdschurch-lab
