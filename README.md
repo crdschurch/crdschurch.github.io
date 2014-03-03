@@ -21,7 +21,7 @@
 **In a new terminal window:**
 - jekyll serve -w
 
-##Instilation Instructions##
+##Installation Instructions##
 - [Installing git](http://git-scm.com/downloads)
 - [Installing Ruby](https://www.ruby-lang.org/en/downloads/)
 - [Installing RubyGem](http://rubygems.org/pages/download)
@@ -31,5 +31,6 @@
   - sudo gem install jekyll
 - Installing SASS###
   - sudo gem install sass
+  - Note: we use sourcemaps which is only supported in v3.3 and up. gem install sass -v '>=3.3.0alpha' --pre
 - Installing Bower
   - sudo npm install -g bower
