@@ -5,6 +5,10 @@
 @import 'badge';
 @import 'timeline';
 
+.navbar{
+	z-index: 100;
+}
+
 .logo {
 	font-size: 25px;
 	font-weight: 100;
