@@ -15,19 +15,19 @@ categories: angular
 TODO: Below are my notes on angular taken from various places.  Need to update this with a table of contents and resource section to contain all the links.
 
 ## Resources
- - [](http://www.youtube.com/watch?v=62RvRQuMVyg)
- - [](https://docs.google.com/file/d/0B4F6Csor-S1cNThqekp4NUZCSmc/edit)
+ - [Massive AngularJS Apps - video](http://www.youtube.com/watch?v=62RvRQuMVyg)
+ - [Massive AngularJS Apps - slides](https://docs.google.com/file/d/0B4F6Csor-S1cNThqekp4NUZCSmc/edit)
 
-Authorization
-Active User Profile
+###Authorization
+####Active User Profile
 When the application was small, they kept it on the client side.
 1. Request index.html
 2. Load index.html
 a. Issue multiple requests for scripts, stylesheets, images, etc.
 b. Parse all the javascript and stylesheets
 c. Bootstrap the Angular app
-3. Request the active user profile 
-4. Store the user profile on the app scope and load the default route 
+3. Request the active user profile
+4. Store the user profile on the app scope and load the default route
 or - Redirect to the login page if the user is not authenticated.
 ISSUES
 Spent a lot of time loading and bootstrapping without knowing the user was authenticated
@@ -135,7 +135,7 @@ uses digest loop if the values are different it calls watch
 HMM, what’s the limit before items in digest loop cause performance issues?
 apply has to be called when values changed i.e. setTimeout (angular as a timeout service that does the apply for you)
 apply is implicitly called normally (ng-click, and other ng event handlers)
-parent and child scopes, goes top down for watch… 
+parent and child scopes, goes top down for watch…
 event broadcast to send messages to other scopes
 ALWAYS CREATE AN INTERMEDIARY
 model.value, not just model
@@ -155,7 +155,7 @@ this is where the magic happens
 Event Broadcasting
 $emit - name, parameters
 goes through the scope hierarchy all the way up to the root
-$rootScope.on - name, handler that takes event and parameters 
+$rootScope.on - name, handler that takes event and parameters
 Animation
 angular-animate.js
 ngAnimate dependency
@@ -163,4 +163,4 @@ CSS controlled
 ng-show/ng-hide ng-hide class
 
 Jasmine Testing
-stub out services 
+stub out services
