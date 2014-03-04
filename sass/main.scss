@@ -2,6 +2,7 @@
 @import '../bower_components/bootstrap-sass-official/vendor/assets/stylesheets/bootstrap';
 @import 'overrides';
 @import 'brandbar';
+@import 'badge';
 
 
 .logo {
@@ -13,6 +14,11 @@
 .logo img {
 	max-width: 140px;
 	margin-top: -6px;
+}
+
+footer {
+	background-color: $gray-lighter;
+	padding: 25px 0;
 }
 
 .center {

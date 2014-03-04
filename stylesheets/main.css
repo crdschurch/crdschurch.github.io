@@ -3468,7 +3468,7 @@ input[type="button"].btn-block {
         margin-right: 0; } }
 
 .navbar-default {
-  background-color: white;
+  background-color: inherit;
   border-color: none; }
   .navbar-default .navbar-brand {
     color: #777777; }
@@ -5122,6 +5122,48 @@ td.visible-print {
   width: 13%;
   background-color: #d06f1a; }
 
+#github {
+  right: -65px;
+  height: 30px;
+  top: 40px;
+  position: absolute;
+  text-decoration: none;
+  width: 250px;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+  #github span {
+    background: #113556;
+    color: white;
+    font-size: 14px;
+    left: 0;
+    padding: 5px 0;
+    position: absolute;
+    text-align: center;
+    width: 250px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 1px 1px 10px;
+    -webkit-transition: opacity, 1s;
+    transition: opacity, 1s; }
+    #github span:last-child {
+      background: #3b6e8f;
+      opacity: 0; }
+  #github :hover span:first-child {
+    opacity: 0; }
+  #github :hover span:last-child {
+    opacity: 1; }
+
+@media all and (-webkit-transform-3d) {
+  #github span {
+    opacity: 1 !important;
+    -webkit-backface-visibility: hidden;
+    -webkit-transition: -webkit-transform 1s; }
+    #github span:last-child {
+      -webkit-transform: rotateX(180deg); }
+  #github:hover span:first-child {
+    -webkit-transform: rotateX(180deg); }
+  #github:hover span:last-child {
+    -webkit-transform: rotateX(360deg); } }
 .logo {
   font-size: 25px;
   font-weight: 100;
@@ -5130,6 +5172,10 @@ td.visible-print {
 .logo img {
   max-width: 140px;
   margin-top: -6px; }
+
+footer {
+  background-color: #eeeeee;
+  padding: 25px 0; }
 
 .center {
   float: none;
