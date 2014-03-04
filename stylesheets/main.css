@@ -5284,4 +5284,7 @@ footer {
 .status-blocks h2 {
   font-size: 60px; }
 
+.documents, .documents ul {
+  list-style: none; }
+
 /*# sourceMappingURL=main.css.map */
