@@ -5028,7 +5028,8 @@ button.close {
 
 .brandbar {
   height: 8px;
-  width: 100%; }
+  width: 100%;
+  z-index: 200; }
 
 .brandbar span {
   height: 100%;
@@ -5088,6 +5089,7 @@ button.close {
   background-color: #d06f1a; }
 
 #github {
+  z-index: 1000;
   right: -65px;
   height: 30px;
   top: 40px;
@@ -5249,6 +5251,9 @@ button.close {
 
 .timeline-body > p + p {
   margin-top: 5px; }
+
+.navbar {
+  z-index: 100; }
 
 .logo {
   font-size: 25px;
