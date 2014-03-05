@@ -2,7 +2,9 @@
 		<h1>Log Entries</h1>
 		<ul class="posts">
 		{% for post in site.posts %}
+			{% unless post.categories contains 'nav' %}
 			<li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}">{{ post.title }}</a></li>
+			{% endunless %}
 		{% endfor %}
 		</ul>
 	</div>

@@ -2,20 +2,6 @@
 layout: default
 title: SiteMap
 ---
-<!--
-{% capture pagination %}
-<ul class="pagination">
-	<li><a href="#">&laquo;</a></li>
-{% for page in site.pages %}
-{% capture mod %}{{ forloop.index | modulo:25 }}{% endcapture %}
-{% if '1' == mod %}
-	<li class="{{ forloop.index | divided_by: 25 | plus: 1}}"><a href="#" class="show">{{ forloop.index | divided_by: 25 | plus: 1}}</a></li>
-{% endif %}
-{% endfor %}
-	<li><a href="#">&raquo;</a></li>
-</ul>
-{% endcapture %}
--->
 <h2>PAGES:</h2>
 <ul>
 	{% for page in site.pages %}
