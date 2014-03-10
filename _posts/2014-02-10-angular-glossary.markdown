@@ -1,8 +1,9 @@
 ---
 layout: post
-title:  "AngularJS Glossary"
-date:   2014-02-10 02:49:29
+title: AngularJS Glossary
+date: {}
 categories: angular
+published: true
 ---
 
 # <a name="toc"></a>AngularJS Glossary
@@ -12,7 +13,7 @@ categories: angular
  - [Directive](#directive)
  - [Scope](#scope)
 
-TODO: Below are my notes on angular taken from various places.  Need to update this with a table of contents and resource section to contain all the links.
+**TODO**: Below are my notes on angular taken from various places.  Need to update this with a table of contents and resource section to contain all the links.
 
 ## Resources
  - [Massive AngularJS Apps - video](http://www.youtube.com/watch?v=62RvRQuMVyg)
