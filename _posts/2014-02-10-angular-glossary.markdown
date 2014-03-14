@@ -1,7 +1,6 @@
 ---
 layout: post
 title: AngularJS Glossary
-date: {}
 categories: angular
 published: true
 ---
