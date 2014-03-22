@@ -5,6 +5,9 @@
 @import 'badge';
 @import 'timeline';
 
+a:hover {
+  text-decoration:none;
+}
 .navbar{
 	z-index: 100;
 }
@@ -23,6 +26,7 @@
 footer {
 	background-color: $gray-lighter;
 	padding: 25px 0;
+  margin-top: 40px;
 }
 
 .center {
@@ -32,6 +36,8 @@ footer {
     margin-right:-4px;
 }
 
+.post li {list-style:none;}
+
 
 /***************************************************************************************
 * Dashboard Elements - used on /dashboard.html
@@ -39,3 +45,4 @@ footer {
 .status-block {padding: 30px 0; color:$gray-lighter;}
 .status-blocks h2 {font-size: $font-size-h2+30px;}
 .documents, .documents ul {list-style: none;}
+#myTabDrop1 {margin-top: 17px;}

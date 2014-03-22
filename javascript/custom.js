@@ -5,5 +5,5 @@ $( document ).ready(function() {
   		index = $( this ).parent().attr('class');
   		$( this ).parent().addClass("active");
   		$( ".group."+index ).show();
-	}); 	
+	});
 });

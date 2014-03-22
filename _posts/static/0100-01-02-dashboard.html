@@ -6,11 +6,46 @@ permalink: dashboard
 categories: nav
 ---
 
+<div id="dashboard">
+
 <div class="container">
 	<div class="row">
-		<div class="col-lg-12">
+		<div class="col-lg-8">
 			<h1>Project Dashboard</h1>
 			<p>The homepage for project "Milacron". Here you'll find links to key documentation, milestones, and helpful information to follow along and contribute to the project. Project Milacron is the effort to replace the home grown church management system behind crossroads.net.</p>
+		</div>
+	</div>
+
+	<br>
+	<br>
+
+	<div class="row">
+		<div class="col-lg-8">
+
+			<h2 class="pull-left">The Latest</h2>
+			<ul id="myTab" class="nav nav-pills pull-left">
+			  <li class="dropdown">
+			    <a href="#" id="myTabDrop1" class="dropdown-toggle pull-right" data-toggle="dropdown"><b class="caret"></b></a>
+			    <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+			      <li class=""><a href="#dropdown1" tabindex="-1" data-toggle="tab">2/10/2014</a></li>
+			      <li class=""><a href="#dropdown2" tabindex="-2" data-toggle="tab">3/20/2014</a></li>
+			    </ul>
+			  </li>
+			</ul>
+
+			<div class="clearfix"></div>
+
+			<div id="myTabContent" class="tab-content">
+			  <div class="tab-pane fade active in" id="dropdown1">
+			    <p> We've identified a promising piece of software called Ministry Platform. We're hopeful in an architecture that has a small core service that performs basic "church management" with many special tools built around that core. We're dedicated to open source. Next steps are to identify areas that need built around Ministry Platform. We're exploring a content management system called Jekyll.</p>
+			    <p class="text-right text-muted">Updated: 2/10/2014</p>
+			  </div>
+			  <div class="tab-pane fade" id="dropdown2">
+			    <p>We're working to finalize the scope of the project. We've chosen Ministry Platfrom as our core system. Scope will consist of setting up MP and bulding many modules on top of MP. Next we need to sign a contract with Think Ministry and get an instance installed. We'll then begin to iterate through each module until every feature needed has been delivered.</p>
+			    <p class="text-right text-muted">Updated: 3/20/2014</p>
+			  </div>
+			</div>
+
 		</div>
 	</div>
 
@@ -198,3 +233,4 @@ categories: nav
 
 
 </div>
+</div><!--/#dashboard-->
