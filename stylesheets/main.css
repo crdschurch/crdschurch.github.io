@@ -5252,6 +5252,9 @@ button.close {
 .timeline-body > p + p {
   margin-top: 5px; }
 
+a:hover {
+  text-decoration: none; }
+
 .navbar {
   z-index: 100; }
 
@@ -5266,13 +5269,17 @@ button.close {
 
 footer {
   background-color: #eeeeee;
-  padding: 25px 0; }
+  padding: 25px 0;
+  margin-top: 40px; }
 
 .center {
   float: none;
   display: inline-block;
   vertical-align: middle;
   margin-right: -4px; }
+
+.posts li {
+  list-style: none; }
 
 /***************************************************************************************
 * Dashboard Elements - used on /dashboard.html
@@ -5286,5 +5293,8 @@ footer {
 
 .documents, .documents ul {
   list-style: none; }
+
+#myTabDrop1 {
+  margin-top: 17px; }
 
 /*# sourceMappingURL=main.css.map */
