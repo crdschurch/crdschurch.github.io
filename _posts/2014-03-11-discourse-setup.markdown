@@ -1,9 +1,10 @@
 ---
 layout: post
-title:  "Discourse Setup"
-date:   2014-03-11 02:49:29
-categories:
+title: Discourse Setup
+date: {}
+categories: null
 comments: true
+published: true
 ---
 
 https://github.com/discourse/discourse/blob/master/docs/INSTALL.md
@@ -17,3 +18,5 @@ http://docs.docker.io/en/latest/installation/ubuntulinux/
 
 followed these instructions for securing:
 http://aws.amazon.com/articles/1233
+
+This is cool!
