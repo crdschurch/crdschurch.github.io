@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Discourse Setup
-date: {}
+date: "2013-11-28 17:43:32 -0500"
 categories: null
 comments: true
 published: true
@@ -18,6 +18,4 @@ http://docs.docker.io/en/latest/installation/ubuntulinux/
 
 followed these instructions for securing:
 http://aws.amazon.com/articles/1233
-
-## This is cool!
 
