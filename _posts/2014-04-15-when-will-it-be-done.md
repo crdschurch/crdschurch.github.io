@@ -1,7 +1,8 @@
 ---
 layout: post
-published: false
-title: ""
+published: true
+title: "true"
+comment: "When will it be done?"
 ---
 
 ## When will it be done? -client
