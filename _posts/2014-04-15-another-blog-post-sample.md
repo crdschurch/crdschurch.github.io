@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: Another blog post sample
 ---
 
