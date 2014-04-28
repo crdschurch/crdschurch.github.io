@@ -23,8 +23,8 @@ The most famous question from clients and the most unfair of it's kind.
       <div class="form-group">
       <label class="control-label">Prayer Request</label>
       <textarea placeholder="Placeholder" name="" class="form-control"></textarea>
-      <input class="btn btn-primary" type="submit" value="Submit">
       </div>
+      <input class="btn btn-primary" type="submit" value="Submit" type="submit">
       </form>
     </span>
   </div>
