@@ -15,8 +15,12 @@ The most famous question from clients and the most unfair of it's kind.
 	<input type="hidden" name="em-0faf398f2c">
       <label class="control-label">Name</label>
       <input class="textinput form-control" type="text" name="" placeholder="Placeholder">
+     </div>
+     <div class="form-group">
       <label class="control-label">Email</label>
       <input class="textinput form-control" type="text" placeholder="Placeholder" name="">
+      </div>
+      <div class="form-group">
       <label class="control-label">Prayer Request</label>
       <textarea placeholder="Placeholder" name="" class="form-control"></textarea>
       <input class="btn btn-primary" type="submit" value="Submit">
