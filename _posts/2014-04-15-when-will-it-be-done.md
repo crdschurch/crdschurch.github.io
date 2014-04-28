@@ -8,8 +8,8 @@ comment: "When will it be done?"
 The most famous question from clients and the most unfair of it's kind.
 
 <div class="container-fluid">
-  <div class="row-fluid">
-    <span class="span8">   
+  <div class="row">
+    <span class="col-md-8">   
     <form method="post" action="https://formend.com/f/0faf398f2c" enctype="multipart/form-data" role="form">
     <div class="form-group">
 	<input type="hidden" name="em-0faf398f2c">
