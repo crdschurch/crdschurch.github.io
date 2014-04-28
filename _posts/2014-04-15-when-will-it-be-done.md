@@ -10,7 +10,8 @@ The most famous question from clients and the most unfair of it's kind.
 <div class="container-fluid">
   <div class="row-fluid">
     <span class="span12">   
-    <form method="post" action="https://formend.com/f/0faf398f2c" enctype="multipart/form-data">
+    <form method="post" action="https://formend.com/f/0faf398f2c" enctype="multipart/form-data" role="form">
+    <div class="form-group">
 	<input type="hidden" name="em-0faf398f2c">
       <label class="control-label">Name</label>
       <input class="textinput" type="text" name="" placeholder="Placeholder">
@@ -19,6 +20,7 @@ The most famous question from clients and the most unfair of it's kind.
       <label class="control-label">Prayer Request</label>
       <textarea placeholder="Placeholder" name=""></textarea>
       <input class="btn btn-primary" type="submit" value="Submit">
+      </div>
       </form>
     </span>
   </div>
