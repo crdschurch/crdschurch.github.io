@@ -14,11 +14,11 @@ The most famous question from clients and the most unfair of it's kind.
     <div class="form-group">
 	<input type="hidden" name="em-0faf398f2c">
       <label class="control-label">Name</label>
-      <input class="textinput" type="text" name="" placeholder="Placeholder">
+      <input class="textinput form-control" type="text" name="" placeholder="Placeholder">
       <label class="control-label">Email</label>
-      <input class="textinput" type="text" placeholder="Placeholder" name="">
+      <input class="textinput form-control" type="text" placeholder="Placeholder" name="">
       <label class="control-label">Prayer Request</label>
-      <textarea placeholder="Placeholder" name=""></textarea>
+      <textarea placeholder="Placeholder" name="" class="form-control"></textarea>
       <input class="btn btn-primary" type="submit" value="Submit">
       </div>
       </form>
