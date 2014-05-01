@@ -17,7 +17,7 @@ Here is an analogy (The Problem):
 
 Jim has been a lifelong car mechanic and knows a lot about how cars work and how they’re built. Sue ask Jim to hand build her a car like the [1969 Ford Mustang](http://www.autoblog.com/2012/11/30/retrobuilt-1969-mustang-fastback-first-drive-review/). Jim agrees to take on the job and so Sue ask how long it will take to build. Jim takes a guess and tells Sue 9 months. He gets to working on the car however he hits his first problem, the don’t sell carburetors like the 1969 Mustang used and needs to instead uses a fuel injection system. Jim doesn’t know much about using fuel injection so he has to learn how to build them, it takes him time to learn. He makes more progress and the car is nearly built, he shows it to Sue. After taking a look, she realizes he used cloth seats and she wanted leather seats instead, it takes Jim time to replace the seats. Things like this continue to happen dozens of times over. All of those circumstances add up to lots of delays in the time it took Jim to build the car.
 
-## The Real Problem
+### The Real Problem
 
 Otherwise called the objective, this is the heart behind the question. People are anxious and naturally want to see the new shiny thing. Maybe the new system or feature is going to make a big impact to their work process, probably a huge impact. It's likely the reason for the urgency is so the client can plan for the operational change the new software is going to bring. Sounds reasonable right?
 
