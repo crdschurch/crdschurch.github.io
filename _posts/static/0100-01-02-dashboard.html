@@ -21,22 +21,21 @@ categories: nav
 
 	<div class="row">
 		<div class="col-lg-8">
+			<h2>The Latest</h2>
 
-			<h2 class="pull-left">The Latest</h2>
-			<ul id="myTab" class="nav nav-pills pull-left">
+			<ul id="myTab" class="">
 			  <li class="dropdown">
-			    <a href="#" id="myTabDrop1" class="dropdown-toggle pull-right" data-toggle="dropdown"><b class="caret"></b></a>
+			    <a href="#" id="myTabDrop1" data-toggle="dropdown"><b class="caret"></b></a>
 			    <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
-			      <li class=""><a href="#dropdown1" tabindex="-1" data-toggle="tab">2/10/2014</a></li>
-			      <li class=""><a href="#dropdown2" tabindex="-2" data-toggle="tab">3/20/2014</a></li>
+			      <li><a href="#dropdown1" tabindex="-1" data-toggle="tab">2/10/2014</a></li>
+			      <li><a href="#dropdown2" tabindex="-2" data-toggle="tab">3/20/2014</a></li>
+			      <li><a href="#dropdown3" tabindex="-3" data-toggle="tab">4/17/2014</a></li>
 			    </ul>
 			  </li>
 			</ul>
 
-			<div class="clearfix"></div>
-
 			<div id="myTabContent" class="tab-content">
-			  <div class="tab-pane fade active in" id="dropdown1">
+			  <div class="tab-pane fade" id="dropdown1">
 			    <p> We've identified a promising piece of software called Ministry Platform. We're hopeful in an architecture that has a small core service that performs basic "church management" with many special tools built around that core. We're dedicated to open source. Next steps are to identify areas that need built around Ministry Platform. We're exploring a content management system called Jekyll.</p>
 			    <p class="text-right text-muted">Updated: 2/10/2014</p>
 			  </div>
@@ -44,7 +43,11 @@ categories: nav
 			    <p>We're working to finalize the scope of the project. We've chosen Ministry Platfrom as our core system. Scope will consist of setting up MP and bulding many modules on top of MP. Next we need to sign a contract with Think Ministry and get an instance installed. We'll then begin to iterate through each module until every feature needed has been delivered.</p>
 			    <p class="text-right text-muted">Updated: 3/20/2014</p>
 			  </div>
-			</div>
+			  <div class="tab-pane active fade in" id="dropdown3">
+			    <p>We've signed a contract with Think Ministry and now have our own install of the <a href="https://my.crossroads.net/ministryplatform">Ministry Platform software</a>. Our high level scope has been finalized and a <a href="https://www.lucidchart.com/documents/view/490d33fc-5330-6010-9d30-38260a009433">project plan</a> based off major epics (modules) has been outlined. We've kicked off our first sprint of development and finished the first iteration of the <a href="http://milacron.crossroads.net/">new website</a>.</p>
+			    <p class="text-right text-muted">Updated: 4/17/2014</p>
+			  </div>
+			</div><!--/myTabContent-->
 
 		</div>
 	</div>
