@@ -1,5 +1,5 @@
 #crdschurch.github.io#
-
+ 
 ##Prerequisites##
 - git (needed for getting started, used for source control)
 - Ruby (needed for RubyGems, Jekyll, & SASS)
