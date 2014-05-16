@@ -1,3 +1,11 @@
-.sass-cache
-_site
-bower_components
+_site/
+clientside/vendor/
+.sass-cache/
+generated/
+clientside/stylesheets/
+node_modules
+nbproject/
+vendor/ruby
+.bundle
+bin/
+.ruby-version

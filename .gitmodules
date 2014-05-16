@@ -1,5 +1,5 @@
 [submodule "cms"]
-	path = cms
+	path = app/cms
 	url = https://github.com/crdschurch/cms.git
 [submodule "experiments/smartystreets"]
 	path = experiments/smartystreets
