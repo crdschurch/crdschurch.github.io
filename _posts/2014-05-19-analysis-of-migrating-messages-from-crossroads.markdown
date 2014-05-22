@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Analysis Migration of message posts from crossroads"
+title:  "Analysis of migrating message posts from crossroads"
 date:   2014-05-19 02:49:29
 categories: technical-specification
 ---
