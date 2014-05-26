@@ -5,7 +5,7 @@ date:   2014-05-19 02:49:29
 categories: technical-specification
 ---
 
-##### Table of Contents
+### Table of Contents
 
   * [Problem Definition](#problem)
   * [Analysis](#analysis)
@@ -14,11 +14,12 @@ categories: technical-specification
 
 <a name="problem"/>
 ### Problem At Hand
-
+</a>
 Migrate all messages which are managed in crossroads legacy application as pages in jelkyll .
 
 <a name="analysis"/>
 ### Analysis
+</a>
 1 . Hierarchy of message data  in crossroads Database
 
 ![alt text](/flowcharts/mediacontent.png "Message Migration flow chart")
@@ -54,5 +55,6 @@ NOTE : - its a private repo link you might need to request access to see that
 
 <a name="flowchart"/>
 ### Flowchart
+</a>
 
  ![alt text](/flowcharts/messagemigrationflow.svg "Message Migration flow chart")
