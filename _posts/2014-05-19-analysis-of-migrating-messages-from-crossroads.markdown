@@ -34,18 +34,12 @@ select * from message where SeriesID = 2 order by date desc;
 
 # To get all media content of all types for each message say messageId = 822
 
-
-select
-    mediacontent . *
-from
-    messagemediacontent
-        inner join
-    mediacontent ON mediacontent.mediacontentid = messagemediacontent.mediaid
-where
-    messageid = 822
-        and (ContentTypeID = 5 OR ContentTypeID = 4
-        OR ContentTypeID = 7
-        OR ContentTypeID = 8)
+SELECT * from mediacontent
+	where mediacontentid in (
+		select messagemediacontent.mediaid 
+			from messagemediacontent 
+			where messageid = 822
+		) AND ( HighQFilePath IS NOT NULL OR iPodVideo IS NOT NULL)
 
 ```
 3 . The job of collecting and reading all messages along with its associated media content is actually happening at the below legacy URL
