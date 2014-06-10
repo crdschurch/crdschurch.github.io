@@ -7,7 +7,7 @@ categories: technical-specification
 
 ### Table of Contents
 
-  * [Task](#task)
+  * [Task](#problem)
   * [Analysis/Work flow](#analysis)
 
 <a name="task"/>
@@ -22,24 +22,15 @@ Migrate all video content from crossroads legacy application to a collection (_m
 
 ![alt text](/flowcharts/video_content.svg "Message Migration flow chart")
 
-2 . Queries used in migration
+2 . Query used in migration
 
 ```
-# To get all available series
-select * from series order by `StartDate` DESC ;
+# To get all media content for a particular content type say ContentTypeId = 1 and gets only the mp4 type videos
 
-# To get all messages for a particular series say seriesID = 2
-select * from message where SeriesID = 2 order by date desc;
-
-# To get all media content for a particular content type for each message say messageId = 495 and ContentTypeId = 1
-
-SELECT * from mediacontent
-	where mediacontentid in (
-		select messagemediacontent.mediaid 
-			from messagemediacontent 
-			where messageid = 495
-		) AND ( iPodVideo IS NOT NULL)
-
+SELECT * FROM mediacontent 
+WHERE  ContentTypeID = 1 
+AND ( iPodVideo IS NOT NULL AND iPodVideo != '') 
+AND iPodVideo LIKE '%mp4';
 ```
 3 . List of the existing video's can be depicted in the following URL
 
