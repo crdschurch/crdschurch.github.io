@@ -25,26 +25,12 @@ Migrate all audio content from crossroads legacy application to a collection (_m
 2 . Queries used to migrate audio content
 
 ```
-# To get all available series
-select * from series order by `StartDate` DESC ;
+# To get all audio content from mediacontent table
 
-# To get all messages for a particular series say seriesID = 2
-select * from message where SeriesID = 2 order by date desc;
-
-# To get all audio content for each message say messageId = 822
-
-SELECT 
-    *
-FROM
-    mediacontent
-WHERE
-mediacontentid IN (SELECT 
-	messagemediacontent.mediaid
-FROM
-	messagemediacontent
-WHERE
-	messageid = 69)
-AND (HighQFilePath IS NOT NULL)
+SELECT * FROM
+mediacontent WHERE 
+HighQFilePath IS NOT NULL AND (ContentTypeID = 2)
+AND (HighQFilePath LIKE '%mp3') AND HighQFilePath != ''
 ```
 3 . The job of collecting and reading all audio content is actually happening at the below legacy URL
 
