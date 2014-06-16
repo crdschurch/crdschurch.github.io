@@ -1,6 +1,6 @@
 name: Crossroads Lab
 markdown: redcarpet
-pygments: true
+highlighter: true
 prose:
   rooturl: '_posts'
   siteurl: 'http://lab.crossroads.net'

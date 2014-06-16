@@ -1,7 +1,7 @@
 ---
 
 layout: post
-title:  "Analysis of migrating PHP files which are just serving content"
+title:  "Ruby coding standards followed in milacron project "
 date:   2014-06-02 02:49:29
 categories: style-guide
 permalink : ruby-standards
