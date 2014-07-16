@@ -3,7 +3,7 @@ layout: post
 title:  "Ruby coding standards followed in milacron project "
 date:   2014-06-02 02:49:29
 categories: style-guide
-permalink : ruby-standards
+permalink: ruby-standards
 ---
 
 ## Ruby Coding Style
