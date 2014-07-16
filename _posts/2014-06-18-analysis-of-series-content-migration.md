@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Analysis of migrating series content from crossroads"
-date:   2014-07-18 12:32:29
+date:   2014-06-18 12:32:29
 categories: technical-specification
 ---
 
