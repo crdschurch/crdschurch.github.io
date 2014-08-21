@@ -1,1 +1,1 @@
-web: jekyll serve -w
+web: node server.js

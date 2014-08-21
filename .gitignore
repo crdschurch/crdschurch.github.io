@@ -2,4 +2,5 @@
 _site
 bower_components
 .idea
-/node_modules/*
+public
+node_modules
