@@ -3,3 +3,4 @@ _site
 bower_components
 .idea
 public
+node_modules
