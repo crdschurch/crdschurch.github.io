@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/app/favicon.png">
+    <title>Dashboard</title>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="/stylesheets/main.css">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+    <header>
+  <!-- Brand Bar -->
+<div class='brandbar'>
+	<span class='b01'></span>
+	<span class='b02'></span>
+	<span class='b03'></span>
+	<span class='b04'></span>
+	<span class='b05'></span>
+	<span class='b06'></span>
+	<span class='b07'></span>
+	<span class='b08'></span>
+	<span class='b09'></span>
+	<span class='b10'></span>
+	<span class='b11'></span>
+	<span class='b12'></span>
+	<span class='b13'></span>
+	<span class='b14'></span>
+</div>
+  <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo" href="/"><img src="/media/logo.svg" alt="crossroads" />lab</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            
+            <li><a href="/about" title="About">About</a></li>
+            
+            <li><a href="/dashboard" title="Dashboard">Dashboard</a></li>
+            
+            <li><a href="/log" title="Log Entries">Log Entries</a></li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Experiments <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/experiments/smartystreets/">Smarty Streets</a></li>
+                <li><a href="/analysis.html"> Analysis & Design Documents </a></li>
+                <li><a href="/sitemap.html">CMS Migration</a></li>
+                <li><a href="#">Media Front Matter</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Right menu's cause an issue with the fork us badge
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Right</a></li>
+          </ul>
+          -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+</header>
+
+
+    <div class="container">
+      <div id="dashboard">
+
+<div class="container">
+	<div class="row">
+		<div class="col-lg-8">
+			<h1>Project Dashboard</h1>
+			<p>The homepage for project "Milacron". Here you'll find links to key documentation, milestones, and helpful information to follow along and contribute to the project. Project Milacron is the effort to replace the home grown church management system behind crossroads.net.</p>
+		</div>
+	</div>
+
+	<br>
+	<br>
+
+	<div class="row">
+		<div class="col-lg-8">
+			<h2>The Latest</h2>
+
+			<ul id="myTab" class="">
+			  <li class="dropdown">
+			    <a href="#" id="myTabDrop1" data-toggle="dropdown"><b class="caret"></b></a>
+			    <ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1">
+			      <li><a href="#dropdown1" tabindex="-1" data-toggle="tab">2/10/2014</a></li>
+			      <li><a href="#dropdown2" tabindex="-2" data-toggle="tab">3/20/2014</a></li>
+			      <li><a href="#dropdown3" tabindex="-3" data-toggle="tab">4/17/2014</a></li>
+			    </ul>
+			  </li>
+			</ul>
+
+			<div id="myTabContent" class="tab-content">
+			  <div class="tab-pane fade" id="dropdown1">
+			    <p> We've identified a promising piece of software called Ministry Platform. We're hopeful in an architecture that has a small core service that performs basic "church management" with many special tools built around that core. We're dedicated to open source. Next steps are to identify areas that need built around Ministry Platform. We're exploring a content management system called Jekyll.</p>
+			    <p class="text-right text-muted">Updated: 2/10/2014</p>
+			  </div>
+			  <div class="tab-pane fade" id="dropdown2">
+			    <p>We're working to finalize the scope of the project. We've chosen Ministry Platfrom as our core system. Scope will consist of setting up MP and bulding many modules on top of MP. Next we need to sign a contract with Think Ministry and get an instance installed. We'll then begin to iterate through each module until every feature needed has been delivered.</p>
+			    <p class="text-right text-muted">Updated: 3/20/2014</p>
+			  </div>
+			  <div class="tab-pane active fade in" id="dropdown3">
+			    <p>We've signed a contract with Think Ministry and now have our own install of the <a href="https://my.crossroads.net/ministryplatform">Ministry Platform software</a>. Our high level scope has been finalized and a <a href="https://www.lucidchart.com/documents/view/490d33fc-5330-6010-9d30-38260a009433">project plan</a> based off major epics (modules) has been outlined. We've kicked off our first sprint of development and finished the first iteration of the <a href="http://milacron.crossroads.net/">new website</a>.</p>
+			    <p class="text-right text-muted">Updated: 4/17/2014</p>
+			  </div>
+			</div><!--/myTabContent-->
+
+		</div>
+	</div>
+
+	<br>
+	<br>
+
+	<div class="row">
+		<div class="col-lg-12">
+			<h2>Status</h2>
+			<div class="row">
+				<div class="text-center status-blocks">
+					<div class="col-sm-4">
+						<div class="label-success status-block">
+							<h2>GREEN</h2>
+							<p>No Major Blockers</p>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="label-primary status-block">
+							<h2>29</h2>
+
+		<div class="col-lg-12">
+			<h2>Milestones</h2>
+			<ul class="timeline">
+				<li>
+					<div class="timeline-badge success"><span class="glyphicon glyphicon-ok"></span></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h5 class="timeline-title">Made decision to use <a href="http://www.thinkministry.com/pages/ministryplatform-church-management-system">Ministry Platform</a> system</h5>
+							<p class="text-muted">11/8/2013</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge success"><span class="glyphicon glyphicon-ok"></span></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h5 class="timeline-title">Project Kick Off</h5>
+							<p class="text-muted">11/21/2013</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge success"><span class="glyphicon glyphicon-ok"></span></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h5 class="timeline-title">Phase 1 (CMS & Front End) Begins</h5>
+							<p class="text-muted">1/6/2014</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge success"><span class="glyphicon glyphicon-ok"></span></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h5 class="timeline-title"> Deployed lab.crossroads.net</h5>
+							<p class="text-muted">2/1/2014</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge success"><span class="glyphicon glyphicon-ok"></span></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h5 class="timeline-title">Think Ministry On-site Demo</h5>
+							<p class="text-muted">2/28/2014</p>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge"><span class="glyphicon glyphicon-calendar"></span></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h5 class="timeline-title">Architecture Defined</h5>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge"><span class="glyphicon glyphicon-calendar"></span></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h5 class="timeline-title">Contract signed with Think Ministry</h5>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge"><span class="glyphicon glyphicon-calendar"></span></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h5 class="timeline-title">Phase 2 (Ministry Platform) Begins</h5>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge"><span class="glyphicon glyphicon-calendar"></span></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h5 class="timeline-title">Phase 3 (MP Integration and Extension) Begins</h5>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge"><span class="glyphicon glyphicon-calendar"></span></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h5 class="timeline-title">All Development Complete</h5>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge"><span class="glyphicon glyphicon-calendar"></span></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h5 class="timeline-title">Launch Phase Begins</h5>
+						</div>
+					</div>
+				</li>
+				<li>
+					<div class="timeline-badge"><span class="glyphicon glyphicon-calendar"></span></div>
+					<div class="timeline-panel">
+						<div class="timeline-heading">
+							<h5 class="timeline-title">System Deployed to Production</h5>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</div>
+
+	<br>
+	<br>
+
+	<div class="row">
+		<div class="col-lg-12">
+			<h2>Documents</h2>
+			<ul class="documents">
+				<li ><span class="glyphicon glyphicon-file"></span>
+					<a href="https://docs.google.com/a/crossroads.net/document/d/1Ol4a_-rih0HtTxYc2shQPBiVohQYWCvMQAKsGha4KKA/edit#heading=h.upn78t21wkx0">Charter</a>
+				</li>
+				<li ><span class="glyphicon glyphicon-file"></span>
+					<a href="https://docs.google.com/a/crossroads.net/document/d/1mrDtxVONkLqx4Fb0lC6crntR-6Nb_LFnM8-qvfTVXFc/edit">Technology Strategy</a>
+				</li>
+				<li ><span class="glyphicon glyphicon-file"></span> Application Architecture</li>
+				<ul >
+					<li ><span class="glyphicon glyphicon-file"></span> Ministry Platform</li>
+					<li ><span class="glyphicon glyphicon-file"></span> Content Management System</li>
+				</ul>
+				<li ><span class="glyphicon glyphicon-file"></span> Applications Architecture</li>
+				<li ><span class="glyphicon glyphicon-file"></span> Infrastructure Architecture</li>
+				<li ><span class="glyphicon glyphicon-file"></span> Data Architecture</li>
+				<li ><span class="glyphicon glyphicon-file"></span> Site Map</li>
+				<li ><span class="glyphicon glyphicon-file"></span> Development Guides</li>
+				<ul>
+					<li ><span class="glyphicon glyphicon-file"></span> UI Design</li>
+					<li ><span class="glyphicon glyphicon-file"></span> UI Patterns</li>
+					<li ><span class="glyphicon glyphicon-file"></span> Coding Best Practice</li>
+					<li ><span class="glyphicon glyphicon-file"></span> Data Standards</li>
+				</ul>
+			</ul>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-12">
+				<div id="home">
+		<h1>Log Entries</h1>
+		<ul class="posts">
+		
+			
+			<li>
+				<h2><a href="/technical-specification/2014/07/16/10-43-15-migrate-videos-to-youtube.html">Migrate videos to YouTube</a> <small>16 Jul 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/technical-specification/2014/07/15/soundcloud-upload-music.html">Sound cloud work flow to upload audio</a> <small>15 Jul 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/technical-specification/2014/06/18/analysis-of-series-content-migration.html">Analysis of migrating series content from crossroads</a> <small>18 Jun 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/ruby-standards">Ruby coding standards followed in milacron project </a> <small>01 Jun 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/technical-specification/2014/06/01/analysis-of-php-content-migration.html">Analysis of migrating PHP files which are just serving content</a> <small>01 Jun 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/technical-specification/2014/05/28/analysis-of-migrating-audio-content.html">Analysis of migrating audio content from crossroads</a> <small>28 May 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/technical-specification/2014/05/27/analysis-of-migrating-videoContent.html">Analysis of migrating video content</a> <small>27 May 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/technical-specification/2014/05/18/image-management.html">Image management at milacron</a> <small>18 May 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/technical-specification/2014/05/18/analysis-of-migrating-messages-from-crossroads.html">Analysis of migrating message posts from crossroads</a> <small>18 May 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/technical-specification/2014/05/08/analysis-of-migrating-content-from-crossroads.html">Migration of CMS content from crossroads Analysis</a> <small>08 May 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/milacron/discourse/2014/04/30/formend.html">Formend.com - Easy form solution</a> <small>30 Apr 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/discourse/2014/04/29/installing-discourse-within-docker-container.html">Installing Discourse with in Docker Container</a> <small>29 Apr 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/2014/04/15/when-will-it-be-done.html">When will it be done?</a> <small>15 Apr 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/2014/04/15/another-blog-post-sample.html">Another blog post sample</a> <small>15 Apr 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/2014/02/12/disqus-comments.html">Disqus Commenting</a> <small>12 Feb 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/angular/2014/02/10/angular-glossary.html">AngularJS Glossary</a> <small>10 Feb 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/jekyll/2014/01/25/sitemap.html">Sitemap</a> <small>25 Jan 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/jekyll/2014/01/25/pagination-with-liquid.html">Pagination with Liquid Only</a> <small>25 Jan 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/jekyll/milicron/2014/01/24/benchmark-cms.html">Bencmark Jekyll w/ CMS content</a> <small>24 Jan 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/milacron/2014/01/23/migrate-cms.html">Migration of CMS content</a> <small>23 Jan 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/2014/01/19/which-static-generator.html">Evaluating the Different Static Generators</a> <small>19 Jan 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/css/frameworks/2014/01/17/uibootstrap-angularstrap-bootstrap.html">UI Bootstrap vs Angular Strap vs Native Bootstrap</a> <small>17 Jan 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/css/frameworks/2014/01/16/bootstrap-vs-foundation.html">Bootstrap vs Foundation</a> <small>16 Jan 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/css/preprocessors/2014/01/15/sass-vs-less.html">SASS vs LESS</a> <small>15 Jan 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/angular/frameworks/2014/01/14/angular-vs-ember.html">AngularJS vs Ember</a> <small>14 Jan 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/angular/frameworks/2014/01/13/angular-instead-of-jquery.html">AngularJS Instead of jQuery</a> <small>13 Jan 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/angular/frameworks/2014/01/13/angular.html">AngularJS</a> <small>13 Jan 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/2014/01/12/jquery-load-menu.html">jQuery Load Menu</a> <small>12 Jan 2014</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/static/2013/11/28/why-static.html">Why Static Generated?</a> <small>28 Nov 2013</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/2013/11/28/history.html">Crossroads Web History</a> <small>28 Nov 2013</small></h2>
+			</li>
+			
+		
+			
+			<li>
+				<h2><a href="/2013/11/28/discourse-setup.html">Discourse Setup</a> <small>28 Nov 2013</small></h2>
+			</li>
+			
+		
+			
+		
+			
+		
+			
+		
+		</ul>
+	</div>
+
+		</div>
+	</div>
+
+
+</div>
+</div><!--/#dashboard-->
+    </div> <!-- /container -->
+
+          <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 center">
+            <p>The contents of this website are ©&nbsp;2014
+              <a href="http://crossroads.net/">Crossroads</a>
+              under the terms of the
+              <a href="https://github.com/crdschurch/crdschurch.github.io/blob/master/LICENSE">MIT&nbsp;License</a>.
+            </p>
+          </div>
+          <div class="col-sm-4 col-sm-offset-4 center">
+            Published & hosted on <a class="logo" href="https://github.com/"><img src="/media/GitHub_Logo.svg" alt="GitHub" /></a>
+          </div>
+        </div>
+      </div> <!-- /container -->
+      </footer>    
+     
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="/javascript/custom.js"></script>
+
+  </body>
+</html>

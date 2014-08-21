@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/app/favicon.png">
+    <title>Ruby coding standards followed in milacron project </title>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="/stylesheets/main.css">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+    <header>
+  <!-- Brand Bar -->
+<div class='brandbar'>
+	<span class='b01'></span>
+	<span class='b02'></span>
+	<span class='b03'></span>
+	<span class='b04'></span>
+	<span class='b05'></span>
+	<span class='b06'></span>
+	<span class='b07'></span>
+	<span class='b08'></span>
+	<span class='b09'></span>
+	<span class='b10'></span>
+	<span class='b11'></span>
+	<span class='b12'></span>
+	<span class='b13'></span>
+	<span class='b14'></span>
+</div>
+  <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo" href="/"><img src="/media/logo.svg" alt="crossroads" />lab</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            
+            <li><a href="/about" title="About">About</a></li>
+            
+            <li><a href="/dashboard" title="Dashboard">Dashboard</a></li>
+            
+            <li><a href="/log" title="Log Entries">Log Entries</a></li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Experiments <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/experiments/smartystreets/">Smarty Streets</a></li>
+                <li><a href="/analysis.html"> Analysis & Design Documents </a></li>
+                <li><a href="/sitemap.html">CMS Migration</a></li>
+                <li><a href="#">Media Front Matter</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Right menu's cause an issue with the fork us badge
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Right</a></li>
+          </ul>
+          -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+</header>
+
+
+    <div class="container">
+      <h2>Ruby coding standards followed in milacron project </h2>
+<p class="meta text-muted">01 Jun 2014</p>
+
+<div class="post">
+<h2>Ruby Coding Style</h2>
+
+<p>This is our internal style guide for Ruby. In milacron project we are using Ruby for automating migration from legacy website to milacron codebase . </p>
+
+<h2>Table of Contents</h2>
+
+<ul>
+<li><a href="#coding-style">Coding Style</a></li>
+<li><a href="#documentation">Documentation</a></li>
+<li><a href="#syntax">Syntax</a></li>
+<li><a href="#naming">Naming</a></li>
+<li><a href="#classes">Classes</a> </li>
+</ul>
+
+<h2>Coding Style</h2>
+
+<ul>
+<li>Use soft-tabs with a two space indent.</li>
+<li>Keep lines fewer than 80 characters.</li>
+<li>Never leave trailing whitespace.</li>
+<li>End each file with a blank newline.</li>
+<li>Please use underscore for function names and complete words for class names , never ever bring in camelcase . </li>
+<li>Use spaces around operators, after commas, colons and semicolons, around { and before }.</li>
+</ul>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby"> sum = 1 + 2
+  a, b = 1, 2
+  1 &gt; 2 ? true : false; puts &quot;Hi&quot;
+  [1, 2, 3].each { |e| puts e }
+
+</code></pre></div>
+<ul>
+<li>No spaces after (, [ or before ], ).</li>
+</ul>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby"> some(arg).other
+ [1, 2, 3].length
+
+</code></pre></div>
+<ul>
+<li>No spaces after !.</li>
+</ul>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby"> !array.include?(element)
+
+</code></pre></div>
+<ul>
+<li>Indent <code>when</code> as deep as <code>case</code>. I know that many would disagree
+with this one, but it&#39;s the style established in both &quot;The Ruby
+Programming Language&quot; and &quot;Programming Ruby&quot;.</li>
+</ul>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby">  # bad
+  case
+    when song.name == &#39;Misty&#39;
+      puts &#39;Not again!&#39;
+    when song.duration &gt; 120
+      puts &#39;Too long!&#39;
+    when Time.now.hour &gt; 21
+      puts &quot;It&#39;s too late&quot;
+    else
+      song.play
+  end
+
+  # good
+  case
+  when song.name == &#39;Misty&#39;
+    puts &#39;Not again!&#39;
+  when song.duration &gt; 120
+    puts &#39;Too long!&#39;
+  when Time.now.hour &gt; 21
+    puts &quot;It&#39;s too late&quot;
+  else
+    song.play
+  end
+</code></pre></div>
+<ul>
+<li>Use empty lines between defs and to break up a method into logical paragraphs.</li>
+</ul>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby">  def some_method
+    data = initialize(options)
+
+    data.manipulate!
+
+    data.result
+  end
+
+  def some_method
+    result
+  end
+</code></pre></div>
+<h2>Documentation</h2>
+
+<ul>
+<li>Please use (<a href="http://en.wikibooks.org/wiki/Ruby_Programming/RubyDoc">Rdoc</a>)  for best of your ability </li>
+</ul>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby">  # content class which defines various attributes and behaviours which are used in
+  # migration
+  #
+  # Author::    Aravind Udayashankara  (mailto:aravind.udayashankara@gmail.com)
+  # Copyright:: Copyright (c) 2012 Crossroads
+  # License::   MIT
+  #
+  # Instantiating this class leads to migration
+  #
+  class Content
+
+    #
+    # This method clears old files by deleting the destination directory to recreate it
+    #
+    # * checks if the log files exists in the location and deletes only on exist
+    # * validates the destination path
+    # * if exists removes the directory
+    # * logs the error message
+    #
+    # content.clean_old_files
+    #
+    def clean_old_files
+     # your logic
+    end
+
+</code></pre></div>
+<h2>Syntax</h2>
+
+<ul>
+<li><p>Use <code>def</code> with parentheses when there are arguments. Omit the parentheses
+when the method doesn&#39;t accept any arguments</p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby">def some_method
+  # body omitted
+end
+
+def some_method_with_arguments(arg1, arg2)
+  # body omitted
+end
+
+</code></pre></div></li>
+<li><p>Never use <code>for</code>, unless you know exactly why. Most of the time iterators
+should be used instead. <code>for</code> is implemented in terms of <code>each</code> (so you&#39;re
+adding a level of indirection), but with a twist - <code>for</code> doesn&#39;t introduce a
+new scope (unlike <code>each</code>) and variables defined in its block will be visible
+outside it</p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby">arr = [1, 2, 3]
+
+# bad
+for elem in arr do
+  puts elem
+end
+
+# good
+arr.each { |elem| puts elem }
+
+</code></pre></div></li>
+<li><p>Never use <code>then</code> for multi-line <code>if/unless</code></p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby"># bad
+if some_condition then
+  # body omitted
+end
+
+# good
+if some_condition
+    # body omitted
+end
+</code></pre></div></li>
+<li><p>Avoid the ternary operator except in cases where all expressions are
+extremely trivial. However, do use the ternary operator over
+<code>if/then/else/end</code> constructs for single line conditionals</p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby"># bad
+result = if some_condition then something else something_else end
+
+# good
+result = some_condition ? something : something_else
+</code></pre></div></li>
+<li><p>Use one expression per branch in a ternary operator. This also means that
+ternary operators must not be nested. Prefer <code>if/else</code> constructs in these
+cases</p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby"># bad
+some_condition ? (nested_condition ? nested_something : nested_something_else) : something_else
+
+# good
+if some_condition
+  nested_condition ? nested_something : nested_something_else
+else
+  something_else
+end
+</code></pre></div></li>
+<li><p>The <code>and</code> and <code>or</code> keywords are banned. It&#39;s just not worth it. Always use
+<code>&amp;&amp;</code> and <code>||</code> instead</p></li>
+<li><p>Avoid multi-line ternary operator, use <code>if/unless</code> instead</p></li>
+<li><p>Favor modifier <code>if/unless</code> usage when you have a single-line body</p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby"># bad
+if some_condition
+  do_something
+end
+
+# good
+do_something if some_condition
+</code></pre></div></li>
+<li><p>Never use <code>unless</code> with <code>else</code>. Rewrite these with the positive case first</p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby"># bad
+unless success?
+  puts &#39;failure&#39;
+else
+  puts &#39;success&#39;
+end
+
+# good
+if success?
+  puts &#39;success&#39;
+else
+  puts &#39;failure&#39;
+end
+</code></pre></div></li>
+<li><p>Don&#39;t use parentheses around the condition of an <code>if/unless/while</code></p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby"># bad
+if (x &gt; 10)
+  # body omitted
+end
+
+# good
+if x &gt; 10
+  # body omitted
+end
+</code></pre></div></li>
+<li><p>Prefer <code>{...}</code> over <code>do...end</code> for single-line blocks. Avoid using <code>{...}</code>
+for multi-line blocks (multiline chaining is always ugly). Always use
+<code>do...end</code> for &quot;control flow&quot; and &quot;method definitions&quot; (e.g. in Rakefiles
+and certain DSLs).  Avoid <code>do...end</code> when chaining</p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby">names = [&quot;Bozhidar&quot;, &quot;Steve&quot;, &quot;Sarah&quot;]
+
+# good
+names.each { |name| puts name }
+
+# bad
+names.each do |name|
+  puts name
+end
+
+# good
+names.select { |name| name.start_with?(&quot;S&quot;) }.map { |name| name.upcase }
+
+# bad
+names.select do |name|
+  name.start_with?(&quot;S&quot;)
+end.map { |name| name.upcase }
+</code></pre></div></li>
+</ul>
+
+<p>Some will argue that multiline chaining would look OK with the use of <code>{...}</code>, 
+   but they should ask themselves - is this code really readable and can&#39;t the 
+   block&#39;s contents be extracted into nifty methods?</p>
+
+<ul>
+<li><p>Avoid <code>return</code> where not required</p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby"># bad
+def some_method(some_arr)
+    return some_arr.size
+end
+
+# good
+def some_method(some_arr)
+    some_arr.size
+end
+</code></pre></div></li>
+<li><p>Use spaces around the <code>=</code> operator when assigning default values to method
+parameters:</p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby"># bad
+def some_method(arg1=:default, arg2=nil, arg3=[])
+  # do something...
+end
+
+# good
+def some_method(arg1 = :default, arg2 = nil, arg3 = [])
+  # do something...
+end
+</code></pre></div></li>
+</ul>
+
+<p>While several Ruby books suggest the first style, the second is much more 
+prominent in practice (and arguably a bit more readable).</p>
+
+<ul>
+<li><p>Using the return value of <code>=</code> (an assignment) is ok assignment with
+parenthesis</p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby"># bad
+if (v = array.grep(/foo/)) ...
+
+# good
+if v = array.grep(/foo/) ...
+
+# also good - has correct precedence.
+if (v = next_value) == &quot;hello&quot; ...
+</code></pre></div></li>
+<li><p>Use <code>||=</code> freely to initialize variables</p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby"># set name to Bozhidar, only if it&#39;s nil or false
+name ||= &#39;Bozhidar&#39;
+</code></pre></div></li>
+<li><p>Don&#39;t use <code>||=</code> to initialize boolean variables (consider what would happen
+if the current value happened to be false)</p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby"># bad - would set enabled to true even if it was false
+enabled ||= true
+
+# good
+enabled = true if enabled.nil?
+</code></pre></div></li>
+<li><p>Avoid using Perl-style special variables (like <code>$0-9</code>, <code>$</code>, etc. ). They are
+quite cryptic and their use in anything but one-liner scripts is
+discouraged. Prefer long form versions such as <code>$PROGRAM_NAME</code></p></li>
+<li><p>Never put a space between a method name and the opening parenthesis</p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby"># bad 
+f (3 + 2) + 1
+
+# good 
+f(3 + 2) + 1
+</code></pre></div></li>
+<li><p>If the first argument to a method begins with an open parenthesis, always
+use parentheses in the method invocation. For example, write <code>f((3 + 2) +
+1)</code></p></li>
+<li><p>Use <code>_</code> for unused block parameters</p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby"># bad
+result = hash.map { |k, v| v + 1 }
+
+# good
+result = hash.map { |_, v| v + 1 }
+</code></pre></div></li>
+</ul>
+
+<h2>Naming</h2>
+
+<ul>
+<li>Use snake_case for methods and variables</li>
+<li>Use CamelCase for classes and modules (keep acronyms like HTTP, RFC, XML
+uppercase)</li>
+<li>Use SCREAMING_SNAKE_CASE for other constants</li>
+<li>The names of predicate methods (methods that return a boolean value) should
+end in a question mark. (i.e. <code>Array#empty?</code>)</li>
+<li>The names of potentially &quot;dangerous&quot; methods (i.e. methods that modify
+<code>self</code> or the arguments, <code>exit!</code>, etc.) should end with an exclamation mark
+Bang methods should only exist if a non-bang method exists  (<a href="http://dablog.rubypal.com/2007/8/15/bang-methods-or-danger-will-rubyist">more on
+this</a>)</li>
+</ul>
+
+<h2>Classes</h2>
+
+<ul>
+<li><p>Avoid the usage of class (<code>@@</code>) variables due to their &quot;nasty&quot; behavior in
+inheritance</p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby">class Parent
+  @@class_var = &#39;parent&#39;
+
+  def self.print_class_var
+    puts @@class_var
+  end
+end
+
+class Child &lt; Parent
+  @@class_var = &#39;child&#39;
+end
+
+Parent.print_class_var # =&gt; will print &quot;child&quot;
+</code></pre></div></li>
+</ul>
+
+<p>As you can see all the classes in a class hierarchy actually share one class
+variable. Class instance variables should usually be preferred over class
+variables.</p>
+
+<ul>
+<li><p>Use <code>def self.method</code> to define singleton methods. This makes the methods
+more resistant to refactoring changes</p>
+<div class="highlight"><pre><code class="language-Ruby" data-lang="Ruby">class TestClass
+  # bad
+  def TestClass.some_method
+    # body omitted
+  end
+
+  # good
+  def self.some_other_method
+    # body omitted
+  end
+
+</code></pre></div></li>
+</ul>
+
+
+</div>
+
+    </div> <!-- /container -->
+
+          <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 center">
+            <p>The contents of this website are ©&nbsp;2014
+              <a href="http://crossroads.net/">Crossroads</a>
+              under the terms of the
+              <a href="https://github.com/crdschurch/crdschurch.github.io/blob/master/LICENSE">MIT&nbsp;License</a>.
+            </p>
+          </div>
+          <div class="col-sm-4 col-sm-offset-4 center">
+            Published & hosted on <a class="logo" href="https://github.com/"><img src="/media/GitHub_Logo.svg" alt="GitHub" /></a>
+          </div>
+        </div>
+      </div> <!-- /container -->
+      </footer>    
+     
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="/javascript/custom.js"></script>
+
+  </body>
+</html>

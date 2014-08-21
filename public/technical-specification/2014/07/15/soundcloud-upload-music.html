@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/app/favicon.png">
+    <title>Sound cloud work flow to upload audio</title>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" href="/stylesheets/main.css">
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../docs-assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+  </head>
+
+  <body>
+    <header>
+  <!-- Brand Bar -->
+<div class='brandbar'>
+	<span class='b01'></span>
+	<span class='b02'></span>
+	<span class='b03'></span>
+	<span class='b04'></span>
+	<span class='b05'></span>
+	<span class='b06'></span>
+	<span class='b07'></span>
+	<span class='b08'></span>
+	<span class='b09'></span>
+	<span class='b10'></span>
+	<span class='b11'></span>
+	<span class='b12'></span>
+	<span class='b13'></span>
+	<span class='b14'></span>
+</div>
+  <!-- Static navbar -->
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand logo" href="/"><img src="/media/logo.svg" alt="crossroads" />lab</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            
+            <li><a href="/about" title="About">About</a></li>
+            
+            <li><a href="/dashboard" title="Dashboard">Dashboard</a></li>
+            
+            <li><a href="/log" title="Log Entries">Log Entries</a></li>
+            
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Experiments <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="/experiments/smartystreets/">Smarty Streets</a></li>
+                <li><a href="/analysis.html"> Analysis & Design Documents </a></li>
+                <li><a href="/sitemap.html">CMS Migration</a></li>
+                <li><a href="#">Media Front Matter</a></li>
+                <li class="divider"></li>
+                <li class="dropdown-header">Nav header</li>
+                <li><a href="#">Separated link</a></li>
+                <li><a href="#">One more separated link</a></li>
+              </ul>
+            </li>
+          </ul>
+          <!-- Right menu's cause an issue with the fork us badge
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Right</a></li>
+          </ul>
+          -->
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+</header>
+
+
+    <div class="container">
+      <h2>Sound cloud work flow to upload audio</h2>
+<p class="meta text-muted">15 Jul 2014</p>
+
+<div class="post">
+<h3>Table of Contents</h3>
+
+<ul>
+<li><a href="#inst">Installation</a></li>
+<li><a href="#flow">Flow chart</a></li>
+<li><a href="#auth">Authentication</a></li>
+<li><a href="#track">Add track</a></li>
+<li><a href="#play">Playlist</a></li>
+<li><a href="#embed">Embed URL</a></li>
+</ul>
+
+<p><a name="inst"/></p>
+
+<h3>Installation</h3>
+
+<p></a>
+<code>
+gem install soundcloud
+</code></p>
+
+<p><a name="flow">
+<img src="/flowcharts/soundcloud.svg" alt="alt text" title="Sound cloud flow chart">
+</a></p>
+
+<p><a name="auth"/></p>
+
+<h3>Authentication</h3>
+
+<p></a>
+Create client object to access api&#39;s. It can be created with</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">require &#39;soundcloud&#39;
+
+client = SoundCloud.new({
+     :client_id         =&gt; YOUR_CLIENT_ID,
+     :client_secret:    =&gt; YOUR_CLIENT_SECRET,
+     :username          =&gt; YOUR_USER_NAME,
+     :password          =&gt; YOUR_PASSWORD
+})
+</code></pre></div>
+<p><a name="track"/></p>
+
+<h3>Adding audio to tracks</h3>
+
+<p></a>
+The uploaded audio will default to tracks i..e to user account. It lists all the tracks associated to the account.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">track = client.post(&#39;/tracks&#39;, :track =&gt; {
+    :title      =&gt; TRACK_TITLE,
+    :description =&gt; TRACK_DESCRIPTION,
+    :asset_data =&gt; File.new(FILE_NAME)
+})
+
+catch the response and store for future use
+</code></pre></div>
+<p><a name="play"></p>
+
+<h3>Creating a playlist and adding track to playlist</h3>
+
+<p></a>
+You can create a playlist as given in the snippet below</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">client.post(&#39;/playlists&#39;, :playlist =&gt; {
+    :title    =&gt; YOUR_PLAYLIST_NAME,
+    :sharing  =&gt; ACCESS_SPECIFIER (public, private)
+})
+</code></pre></div>
+<p>To add the track to playlist. </p>
+
+<ul>
+<li><a href="#getplay">Get the playlist information</a></li>
+<li><a href="#gettrack">Get the track information</a></li>
+<li><a href="#addplay">Add to playlist</a></li>
+</ul>
+
+<p><a name="getplay"></p>
+
+<h4>Get playlist details</h4>
+
+<p></a></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">playlist = client.get(&#39;/me/playlists&#39;)
+</code></pre></div>
+<p><a name="gettrack"></p>
+
+<h4>Get track details</h4>
+
+<p></a></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">track = client1.get(&#39;/resolve&#39;, :url =&gt; TRACK_URL)
+</code></pre></div>
+<p><a name="addplay"></p>
+
+<h4>Add to playlist</h4>
+
+<p></a></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">&quot;track_ids &lt;&lt; [MULTIPLE TRACK ID&#39;s, Comma separated]&quot;
+OR single track id can be processed.
+
+tracks = track_ids.map{|id| {:id =&gt; id}}
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">playlist = client.put(&#39;https://api.soundcloud.com/playlists/PLAYLIST_ID&#39;, :playlist =&gt; {
+    :tracks =&gt; tracks 
+})
+
+</code></pre></div>
+<p><a name="embed"></p>
+
+<h3>Embed information of the track</h3>
+
+<p></a></p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">embed_info = client.get(&#39;/oembed&#39;, :url =&gt; TRACK_URL)
+
+</code></pre></div>
+<p>Store the relevant information in DB when ever it is appropriate for future references.</p>
+
+<p>Repeat the process for adding multiple tracks </p>
+
+
+</div>
+
+    </div> <!-- /container -->
+
+          <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-4 center">
+            <p>The contents of this website are ©&nbsp;2014
+              <a href="http://crossroads.net/">Crossroads</a>
+              under the terms of the
+              <a href="https://github.com/crdschurch/crdschurch.github.io/blob/master/LICENSE">MIT&nbsp;License</a>.
+            </p>
+          </div>
+          <div class="col-sm-4 col-sm-offset-4 center">
+            Published & hosted on <a class="logo" href="https://github.com/"><img src="/media/GitHub_Logo.svg" alt="GitHub" /></a>
+          </div>
+        </div>
+      </div> <!-- /container -->
+      </footer>    
+     
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="/javascript/custom.js"></script>
+
+  </body>
+</html>
