@@ -1,13 +1,28 @@
 {
-    "name": "crossroads-labs",
-    "description": "Crossroads Lab: where we talk about and share the web technologies and solutions we're implementing",
-    "version": "0.0.1",
-    "dependencies": {
-        "dotenv": "^0.2.8",
-        "express": "^4.4.1",
-        "logfmt" : "*"
-    },
-    "engines": {
-        "node": "0.10.x"
-    }
+  "name": "crossroads-labs",
+  "description": "Crossroads Lab: where we talk about and share the web technologies and solutions we're implementing",
+  "version": "0.0.1",
+  "dependencies": {
+    "dotenv": "^0.2.8",
+    "express": "^4.4.1",
+    "logfmt": "*"
+  },
+  "engines": {
+    "node": "0.10.x"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "main": "server.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/crdschurch/crdschurch.github.io.git"
+  },
+  "author": "aravind666",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/crdschurch/crdschurch.github.io/issues"
+  },
+  "homepage": "https://github.com/crdschurch/crdschurch.github.io"
 }
