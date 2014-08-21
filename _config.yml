@@ -1,10 +1,11 @@
 name: Crossroads Lab
 markdown: redcarpet
 highlighter: true
+source: app
+destination: public
 prose:
   rooturl: '_posts'
-  siteurl: 'http://lab.crossroads.net'
-  relativeLinks: 'http://lab.crossroads.net/links.jsonp'
+  siteurl: '/'
   media: 'media'
   metadata:
     _posts:
