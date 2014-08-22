@@ -23,6 +23,8 @@
 **In a new terminal window:**
 - jekyll serve -w
 
+This watches the changes done to your posts and it refreshes the build
+
 ##Installation Instructions##
 - [Installing git](http://git-scm.com/downloads)
 - [Installing Ruby](https://www.ruby-lang.org/en/downloads/)
