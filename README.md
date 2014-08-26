@@ -3,6 +3,12 @@
 
 ![Codeship Status](https://www.codeship.io/projects/b3642f40-b8f5-0131-7963-32260bb6295c/status "Codeship Status")
 
+#crdschurch.github.io#
+
+
+![Codeship Status](https://www.codeship.io/projects/b3642f40-b8f5-0131-7963-32260bb6295c/status "Codeship Status")
+
+>>>>>>> Testing the CI build
 ##Prerequisites##
 - git (needed for getting started, used for source control)
 - Ruby (needed for RubyGems, Jekyll, & SASS)
