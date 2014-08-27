@@ -1,3 +1,3 @@
 module.exports = function(gulp) {
-  return gulp.task("default", ["dev"]);
+  return gulp.task('default', ['dev']);
 };
