@@ -1,7 +1,7 @@
 var sass = require('gulp-ruby-sass');
 var concat = require('gulp-concat');
 var util = require('gulp-util');
-var autoprefixer = require('gulp-autoprefixer')
+var autoprefixer = require('gulp-autoprefixer');
 
 module.exports = function(gulp) {
   return gulp.task('sass', function() {
