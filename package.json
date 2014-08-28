@@ -22,7 +22,7 @@
     "gulp-debug": "^1.0.0",
     "gulp-ngmin": "^0.3.0",
     "gulp-rev": "^1.1.0",
-    "gulp-ruby-sass": "^0.7.1",
+    "gulp-ruby-sass": "git://github.com/sindresorhus/gulp-ruby-sass#rw/fix-import-sourcemaps",
     "gulp-uglify": "^0.3.2",
     "gulp-usemin": "^0.3.8",
     "gulp-util": "^3.0.0"
