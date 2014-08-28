@@ -14,7 +14,13 @@
     "start": "node server.js"
   },
   "main": "server.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-autoprefixer": "0.0.10",
+    "gulp-concat": "^2.3.4",
+    "gulp-ruby-sass": "^0.7.1",
+    "gulp-util": "^3.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/crdschurch/crdschurch.github.io.git"
