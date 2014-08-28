@@ -1,8 +1,8 @@
 #crdschurch.github.io#
 
-  
+
 ![Codeship Status](https://www.codeship.io/projects/b3642f40-b8f5-0131-7963-32260bb6295c/status "Codeship Status")
- 
+
 ##Prerequisites##
 - git (needed for getting started, used for source control)
 - Ruby (needed for RubyGems, Jekyll, & SASS)
@@ -11,18 +11,16 @@
 - Jekyll - Server and Static Generator, you'll need this for your local testing
 - SASS - Preprocessor for our CSS, if you are doing any style changes you'll need this
 - Bower - JS and CSS dependency managment, you'll need this to get 3rd party libraries/dependencies
-- Python (needed for code highlighting, Pygments) **optional** 
+- Python (needed for code highlighting, Pygments) **optional**
 
 ##Quick Start##
 - git clone https://github.com/crdschurch/crdschurch.github.io
 - cd crdschurch.github.io
 - git submodule init
 - git submodule update
+- npm install
 - bower update
-- sass --watch --sourcemap sass:stylesheets
-
-**In a new terminal window:**
-- jekyll serve -w
+- gulp
 
 This watches the changes done to your posts and it refreshes the build
 
