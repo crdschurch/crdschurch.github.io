@@ -8,28 +8,15 @@ var util = require('gulp-util');
 var debug = require('gulp-debug');
 
 module.exports = function(gulp) {
-  return gulp.task('html', ['sass'], function() {
+  return gulp.task('html', ['scripts', 'sass'], function() {
     return gulp.src(['app/_includes/head.html', 'app/_includes/footer.html'])
       .pipe(debug({verbose: true}))
       .pipe(usemin({
         css: [csso(), revision()],
-        // js: [ngmin(),uglify(), revision()],
-        js: [util.noop()],
+        js: [ngmin(),uglify(), revision()],
+        // js: [util.noop()],
         html: [util.noop()]
       }))
       .pipe(gulp.dest('app/_includes'));
   });
 };
-
-//
-// module.exports = function(gulp, $) {
-//   return gulp.task('html', ['scripts', 'sass'], function() {
-//     return gulp.src(['app/_includes/head.html', 'app/_includes/footer.html'])
-//       .pipe($.usemin({
-//         css: [$.csso(), $.rev()],
-//         js: [$.ngmin(), $.uglify(), $.rev()],
-//         html: [$.util.noop()]
-//       }))
-//       .pipe(gulp.dest('app/_includes'));
-//   });
-// };
