@@ -6,16 +6,3 @@ module.exports = function(gulp, $) {
       .pipe(gulp.dest('app/stylesheets'))
   });
 };
-
-
-//
-// var gulp = require('gulp');
-// var sass = require('gulp-ruby-sass');
-// var prefix = require('gulp-autoprefixer');
-//
-// gulp.task('default', function () {
-//     gulp.src('src/app.scss')
-//         .pipe(sass({sourcemap: true, style: 'compact'}))
-//         .pipe(prefix("last 1 version", "> 1%", "ie 8", "ie 7"))
-//         .pipe(gulp.dest('dist'));
-// });
