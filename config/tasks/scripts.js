@@ -1,6 +1,6 @@
 var paths = require('../paths');
 
-module.exports = function(gulp) {
+module.exports = function(gulp, $) {
   return gulp.task('scripts', ['clean:js'], function() {
       gulp.src(paths.scripts)
         .pipe($.jshint())
