@@ -1,10 +1,9 @@
-var imagemin = require('gulp-imagemin');
 var pngcrush = require('imagemin-pngcrush');
 
-module.exports = function(gulp) {
+module.exports = function(gulp, $) {
   return gulp.task('imagemin', ['jb'], function() {
     return gulp.src('public/media/*')
-      .pipe(imagemin({
+      .pipe($.imagemin({
         progressive: true,
         svgoPlugins: [
           {
