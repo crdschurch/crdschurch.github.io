@@ -3,6 +3,7 @@ markdown: redcarpet
 highlighter: true
 source: app
 destination: public
+keep_files: ["stylesheets/*", "javascript/*"]
 prose:
   rooturl: '_posts'
   siteurl: '/'

@@ -1,5 +1,4 @@
 crdschurch.github.io [ ![Codeship Status for crdschurch/crdschurch.github.io](https://codeship.io/projects/b3642f40-b8f5-0131-7963-32260bb6295c/status?branch=master)](https://codeship.io/projects/20734)
-=============
 Code base for [lab.crossroads.net](http://lab.crossroads.net)
 
 ##Prerequisites##
@@ -10,7 +9,7 @@ Code base for [lab.crossroads.net](http://lab.crossroads.net)
 - Jekyll - Server and Static Generator, you'll need this for your local testing
 - SASS - Preprocessor for our CSS, if you are doing any style changes you'll need this
 - Bower - JS and CSS dependency managment, you'll need this to get 3rd party libraries/dependencies
-- Python (needed for code highlighting, Pygments) **optional** 
+- Python (needed for code highlighting, Pygments) **optional**
 
 ##Quick Start##
 - git clone https://github.com/crdschurch/crdschurch.github.io
