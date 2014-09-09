@@ -2,7 +2,7 @@ crdschurch.github.io [ ![Codeship Status for crdschurch/crdschurch.github.io]
 
 (https://codeship.io/projects/b3642f40-b8f5-0131-7963-32260bb6295c/status?branch=master)](https://codeship.io/projects/20734)
 
-=============
+============= 
 
 Code base for [lab.crossroads.net](http://lab.crossroads.net)
 
