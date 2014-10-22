@@ -15,6 +15,7 @@ Code base for [lab.crossroads.net](http://lab.crossroads.net)
 - SASS - Preprocessor for our CSS, if you are doing any style changes you'll need this
 - Bower - JS and CSS dependency managment, you'll need this to get 3rd party libraries/dependencies
 - Python (needed for code highlighting, Pygments) **optional**
+- gulp
 
 ##Quick Start##
 - git clone https://github.com/crdschurch/crdschurch.github.io
